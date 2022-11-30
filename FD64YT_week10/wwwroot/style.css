@@ -1,0 +1,16 @@
+﻿#pascal {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sor {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.elem {
+    display: inline-block;
+    border: 1px solid grey;
+    width: 30px;
+    height: 30px;
+}
