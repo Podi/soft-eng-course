@@ -4,13 +4,13 @@
 
 var viccek;
 
-function download() {
+function letöltés() {
     fetch('/jokes.json')
         .then(response => response.json())
         .then(data => downloadFinished(data)
         );
 }
-function downloadFinished(d) {
+function letöltésBefejeződött(d) {
     console.log("Sikeres letöltés");
     console.log(d);
     viccek = d;
