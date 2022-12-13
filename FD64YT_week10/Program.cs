@@ -1,10 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
 builder.Services.AddControllers();  //Az API Controllerekhez kell 
 builder.Services.AddEndpointsApiExplorer();   //A Swaggerhez kell
 builder.Services.AddSwaggerGen();             //A Swaggerhez kell
 
 var app = builder.Build();
 
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment()) //A Swagger éles környezetben nem indul
 {
     app.UseSwagger();
