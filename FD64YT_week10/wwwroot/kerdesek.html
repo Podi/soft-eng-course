@@ -10,11 +10,11 @@
     <script>
         fetch('/questions/all')
             .then(response => response.json())
-            .then(data => kiíratás(data)
+            .then(data => kiiaratas(data)
 
             );
 
-        function kiíratás(lista) {
+        function kiiaratas(lista) {
             console.log(lista)
             for (var i = 0; i < lista.length; i++) {
                 let újElem = document.createElement("div");
